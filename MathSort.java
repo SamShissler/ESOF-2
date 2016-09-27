@@ -1,10 +1,11 @@
 import javax.swing.*;
+import java.util.Arrays;
 
 public class MathSort{
     int[] unsorted = new int[]{52,4,86,85,5,4,5000000,452,8,2,45,86372,8370,5,875,87,0};
     public MathSort(){
 	int[] sorted = getInput();
-	JOptionPane.showMessageDialog(null, "Your sorted array is: \n    " + sorted.toString(), "Yay, it worked", JOptionPane.PLAIN_MESSAGE);
+	JOptionPane.showMessageDialog(null, "Your sorted array is: \n    " + Arrays.toString(sorted), "Yay, it worked", JOptionPane.PLAIN_MESSAGE);
     }
     public int[] getInput(){
 	String input = JOptionPane.showInputDialog(null, "Please select a math program to sort your integers:\nEnter either \'Mathematica\', \'MTool\', or \'MyMath\'.");
